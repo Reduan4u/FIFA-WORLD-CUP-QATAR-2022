@@ -1,0 +1,67 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.header {
+    display: grid;
+    justify-content: center;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 1321px;
+    height: 646px;
+    background: #161616;
+    border-radius: 30px;
+    justify-items: center;
+
+}
+
+.image img {
+    width: 581px;
+    height: 613px;
+    margin-top: 33px;
+}
+
+.container .article {
+    width: 531px;
+    height: 424px;
+    margin-left: 106px;
+}
+
+.article h1 {
+    width: 531px;
+    height: 240px;
+    font-weight: 700;
+    font-size: 70px;
+    color: #FFFFFF;
+    margin-bottom: 0;
+}
+
+.article .headline {
+    width: 506px;
+    height: 78px;
+    font-weight: 400;
+    font-size: 16px;
+    color: #FFFFFF;
+    margin-top: 80px;
+}
+
+.button button {
+    position: absolute;
+    width: 187px;
+    height: 56px;
+    background: #DD0000;
+    border-radius: 5px;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    color: #FFFFFF;
+    border: none;
+    margin-top: 30px;
+}
+
+.fa-solid {
+    margin-left: 10px;
+}
