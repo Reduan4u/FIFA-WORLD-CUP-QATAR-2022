@@ -98,6 +98,28 @@ body {
 }
 
 .button1 {
+    border: none;
+    width: 252px;
+    height: 64px;
+    background: #DD0000;
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 20px;
+    color: white;
+
+}
+
+.button2 {
+    width: 252px;
+    height: 64px;
+    border: none;
+    background: #FFFFFF;
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.button3 {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -119,27 +141,6 @@ a:active {
 
 }
 
-.button2 {
-    width: 252px;
-    height: 64px;
-    border: none;
-    background: #FFFFFF;
-    border-radius: 10px;
-    font-weight: 500;
-    font-size: 20px;
-}
-
-.button3 {
-    border: none;
-    width: 252px;
-    height: 64px;
-    background: #DD0000;
-    border-radius: 10px;
-    font-weight: 500;
-    font-size: 20px;
-    color: white;
-}
-
 /* left part end */
 /* right part start */
 
@@ -153,72 +154,48 @@ a:active {
 
 }
 
+/* delete orte hbe, cos % diye kora jabe */
 .container3 {
     width: 1087px;
 }
 
-.blogs {
+.team-flag {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.match {
+    border: 1px solid rgb(233, 233, 233);
+    width: 312px;
+    height: 242px;
+    border-radius: 10px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.matches {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    width: 312px;
-    grid-gap: 24px;
+    grid-row-gap: 50px;
 }
 
-.blog {
-    border: 1px solid rgb(233, 233, 233);
-    width: 344px;
-    height: 362px;
-    border-radius: 10px;
-}
-
-.blog-image img {
-    width: 345px;
-    height: 175px;
-}
-
-.blog-button button {
-    width: 100px;
-    height: 32px;
-    margin-top: 20px;
-    margin-left: 20px;
-    margin-bottom: 15px;
-    border-radius: 5px;
-    border-color: #3f3f3f;
-}
-
-.blog-text {
-    width: 272px;
-    height: 54px;
-    left: 496px;
-    top: 1068px;
-    margin-left: 20px;
-    margin-bottom: 20px;
-    font-family: 'Poppins';
-    font-style: normal;
+.match-team h4 {
     font-weight: 600;
-    font-size: 18px;
-    line-height: 27px;
-
+    font-size: 20px;
+    text-align: center;
     color: #161616;
+    margin-top: 20px;
+    margin-bottom: 15px;
 }
 
-.icons {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    width: 143px;
-    height: 26px;
-    margin-left: 20px;
-    margin-bottom: 20px;
-}
-
-.blog-icon1 {
-    display: flex;
-    align-items: center;
-}
-
-.blog-icon2 {
-    display: flex;
-    align-items: center;
+.match-time h5 {
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    color: #4D4D4D;
 }
 
 /* right part end */
