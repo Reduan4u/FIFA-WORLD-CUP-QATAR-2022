@@ -15,7 +15,7 @@ body {
 .container1 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    width: 1419px;
+    width: auto;
     height: 646px;
     background: #161616;
     border-radius: 30px;
@@ -24,19 +24,19 @@ body {
 }
 
 .image img {
-    width: 581px;
+    width: auto;
     height: 613px;
     margin-top: 33px;
 }
 
 .container .article {
-    width: 531px;
+    width: auto;
     height: 424px;
     margin-left: 106px;
 }
 
 .article h1 {
-    width: 531px;
+    width: auto;
     height: 240px;
     font-weight: 700;
     font-size: 70px;
@@ -45,7 +45,7 @@ body {
 }
 
 .article .headline {
-    width: 506px;
+    width: auto;
     height: 78px;
     font-weight: 400;
     font-size: 16px;
@@ -72,7 +72,14 @@ body {
 }
 
 /* left part start */
+.middle-part {
+    display: grid;
+    grid-template-columns: 25% 1fr;
+    justify-items: center;
+    margin-left: 10%;
+    margin-right: 10%;
 
+}
 
 .container2 {
     width: 312px;
@@ -144,15 +151,6 @@ a:active {
 /* left part end */
 /* right part start */
 
-
-.middle-part {
-    display: grid;
-    grid-template-columns: 25% 1fr;
-    justify-items: center;
-    margin-left: 10%;
-    margin-right: 10%;
-
-}
 
 /* delete orte hbe, cos % diye kora jabe */
 .container3 {
