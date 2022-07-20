@@ -255,8 +255,8 @@ footer {
 
 .footer-icon {
     display: grid;
-    -ms-flex-align: center;
-    grid-template-columns: repeat(5, 1FR);
+    grid-template-columns: repeat(3, 1FR);
+    text-align: center;
     color: #B9B9B9;
     margin-left: 40%;
     margin-right: 40%;
