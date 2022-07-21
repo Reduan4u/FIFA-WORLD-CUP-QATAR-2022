@@ -18,8 +18,6 @@ a {
     padding: 10px;
     margin: 25px 0px;
     text-align: center;
-    position: absolute;
-    z-index: 1;
 }
 
 
@@ -27,6 +25,10 @@ a {
     margin: 50px;
     overflow-x: hidden;
 }
+
+
+/* ------header part start--------  */
+
 
 .header {
 
@@ -72,14 +74,23 @@ a {
     margin-left: 10px;
 }
 
-/* left part start */
-/* <Blog part start*/
+/* ------header part end--------  */
+
+
+
+/* -------Blog part start-------------*/
+
 .container2 {
     display: flex;
     margin-top: 10px;
     width: 100%;
     border-radius: 10px;
+    margin: 30px;
 }
+
+
+/* -------left part start -------------*/
+
 
 .options {
     width: 20%;
@@ -90,6 +101,7 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     width: 300px;
     height: 300px;
     text-align: center;
@@ -104,7 +116,6 @@ a {
     padding: 10px;
     margin: 10px;
     border-radius: 10px;
-
 }
 
 .link-sections a:hover {
@@ -117,11 +128,11 @@ a {
     color: #fff;
 }
 
-/* right part start */
-.container2 {
-    width: 100%;
-    margin: 30px;
-}
+
+/* -------left part end -------------*/
+
+/* -------right part start -------------*/
+
 
 .options2 {
     margin-right: 30px;
@@ -151,11 +162,35 @@ a {
     justify-content: space-evenly;
 }
 
-#view {
-    display: none;
-    margin: 0 auto;
 
+/* -------right part end -------------*/
+
+
+/* -------special part start -------------*/
+
+
+.view button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 60px;
+    font-size: 20px;
+    background: red;
+    border-radius: 8px;
+    text-decoration: none;
+    border: none;
+    margin: 0 auto;
 }
+
+
+
+
+/* -------special part end -------------*/
+
+
+/* --------------------footer start-------------------- */
+
 
 footer {
     width: 100%;
@@ -200,6 +235,14 @@ footer {
     grid-gap: 30px;
 }
 
+/* ----------footer part end------------ */
+
+
+/* ----------responsiveness Start--------- */
+
+
+/* ----------Tab responsiveness Start--------- */
+
 
 @media only screen and (min-width: 577px) and (max-width: 768px) {
 
@@ -236,13 +279,46 @@ footer {
     }
 
     .link-sections {
-        display: flex;
-        flex-direction: row;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
         justify-content: center;
         text-align: center;
         background: none;
         border-radius: 10px;
+        width: 100%;
+        padding: 0 10px;
+        border-color: 1px solid black;
+
+    }
+
+    .link-sections a {
+        display: inline-block;
+        color: #000;
+        background-color: white;
+        font-size: 18px;
+        padding: 10px;
+        margin: 10px;
+        width: 150px;
+        text-align: center;
+        border-radius: 10px;
+        border-color: 1px solid black;
+
     }
 }
 
+.view button {
+    display: flex;
+}
+
+/* ----------Tab responsiveness end--------- */
+
+
+/* ----------Mobile responsiveness Start--------- */
+
+
 @media screen and (max-width: 576px) {}
+
+
+
+
+/* ----------Mobile responsiveness end--------- */
