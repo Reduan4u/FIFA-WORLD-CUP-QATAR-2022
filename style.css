@@ -55,6 +55,7 @@ a {
     padding-right: 50px;
 }
 
+
 .image {
     margin-top: 240px;
     width: 50%;
@@ -63,6 +64,12 @@ a {
 .image img {
     width: 100%;
     object-fit: cover;
+    transition: width 2s, height 2s, background-color 2s, transform 2s;
+
+}
+
+.image img:hover {
+    transform: rotate(360deg);
 }
 
 .fa-solid {
