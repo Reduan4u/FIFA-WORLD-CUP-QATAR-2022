@@ -1,5 +1,5 @@
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     margin: 0;
     box-sizing: border-box;
 }
@@ -7,31 +7,24 @@ body {
 a {
     text-decoration: none;
     color: #fff;
-
 }
 
 .button {
-    width: 200px;
     font-size: 18px;
-    background: red;
     border-radius: 8px;
-    padding: 10px;
-    margin: 25px 0px;
+    padding: 15px;
+    margin: 25px 10px;
     text-align: center;
+    color: #000;
+    background: red;
 }
-
 
 .main {
     margin: 50px;
     overflow-x: hidden;
 }
 
-
-/* ------header part start--------  */
-
-
 .header {
-
     background-color: #161616;
     color: #fff;
     padding: 25px;
@@ -50,7 +43,6 @@ a {
 
 .article .title h1 {
     font-size: 2.5rem;
-
 }
 
 .article .headline p {
@@ -67,30 +59,20 @@ a {
 .image img {
     width: 100%;
     object-fit: cover;
-
 }
 
 .fa-solid {
     margin-left: 10px;
 }
 
-/* ------header part end--------  */
-
-
-
-/* -------Blog part start-------------*/
-
+/* left part start */
+/* <Blog part start*/
 .container2 {
     display: flex;
     margin-top: 10px;
     width: 100%;
     border-radius: 10px;
-    margin: 30px;
 }
-
-
-/* -------left part start -------------*/
-
 
 .options {
     width: 20%;
@@ -101,7 +83,6 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     width: 300px;
     height: 300px;
     text-align: center;
@@ -122,17 +103,16 @@ a {
     background-color: #dd0000;
 }
 
-
 #active {
     background-color: #dd0000;
     color: #fff;
 }
 
-
-/* -------left part end -------------*/
-
-/* -------right part start -------------*/
-
+/* right part start */
+.container2 {
+    width: 100%;
+    margin: 30px;
+}
 
 .options2 {
     margin-right: 30px;
@@ -145,7 +125,6 @@ a {
     width: 100%;
     object-fit: cover;
     border-radius: 12px 12 px 0px 0px;
-
 }
 
 .options2 .blog {
@@ -162,35 +141,16 @@ a {
     justify-content: space-evenly;
 }
 
-
-/* -------right part end -------------*/
-
-
-/* -------special part start -------------*/
-
-
-.view button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 200px;
-    height: 60px;
-    font-size: 20px;
-    background: red;
+#view {
+    font-size: 18px;
     border-radius: 8px;
-    text-decoration: none;
-    border: none;
-    margin: 0 auto;
+    padding: 15px;
+    margin: 25px 10px;
+    text-align: center;
+    color: #000;
+    background: red;
+    display: none;
 }
-
-
-
-
-/* -------special part end -------------*/
-
-
-/* --------------------footer start-------------------- */
-
 
 footer {
     width: 100%;
@@ -202,7 +162,7 @@ footer {
 .footer-title h1 {
     font-size: 80px;
     text-align: center;
-    color: #FFFFFF;
+    color: #ffffff;
     padding-top: 70px;
 }
 
@@ -216,7 +176,6 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
 
 .footer-nav ul li {
@@ -229,23 +188,13 @@ footer {
     display: grid;
     grid-template-columns: repeat(3, 1FR);
     text-align: center;
-    color: #B9B9B9;
+    color: #b9b9b9;
     margin-left: 40%;
     margin-right: 40%;
     grid-gap: 30px;
 }
 
-/* ----------footer part end------------ */
-
-
-/* ----------responsiveness Start--------- */
-
-
-/* ----------Tab responsiveness Start--------- */
-
-
 @media only screen and (min-width: 577px) and (max-width: 768px) {
-
     .container1 {
         display: flex;
         justify-content: center;
@@ -265,60 +214,152 @@ footer {
         white-space: nowrap;
         text-overflow: ellipsis;
         padding-right: 50px;
-
     }
 
     .container2 {
         display: flex;
         flex-direction: column;
-        align-items: center;
         justify-content: center;
-        margin-top: 10px;
+        align-items: center;
         width: 100%;
-        border-radius: 10px;
+    }
+
+    .options2 {
+        width: 100%;
+        justify-content: center;
+        display: flex;
     }
 
     .link-sections {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        display: flex;
+        flex-direction: column;
         justify-content: center;
+        width: 300px;
+        height: 200px;
         text-align: center;
-        background: none;
+        background: #000;
         border-radius: 10px;
-        width: 100%;
-        padding: 0 10px;
-        border-color: 1px solid black;
-
+        margin: 20px 0;
     }
 
     .link-sections a {
-        display: inline-block;
-        color: #000;
-        background-color: white;
-        font-size: 18px;
-        padding: 10px;
-        margin: 10px;
-        width: 150px;
         text-align: center;
-        border-radius: 10px;
-        border-color: 1px solid black;
+        padding: 10px;
+        color: #000;
+        background: #fff;
+        outline: none;
+        margin: 10px 10px;
+        border-radius: 8px;
+        cursor: pointer;
+    }
 
+    .options2 {
+        margin-right: 30px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 35px;
+    }
+
+    #view {
+        display: block;
+        color: #fff;
     }
 }
 
-.view button {
-    display: flex;
+@media screen and (max-width: 576px) {
+    .container1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .image {
+        margin-bottom: -30px;
+        width: 100%;
+    }
+
+    .header {
+        background-color: #161616;
+        color: #fff;
+        padding: 25px;
+        border-radius: 10px;
+    }
+
+    .headline p {
+        font-size: 1rem;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        padding-right: 50px;
+    }
+
+    .container2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .options2 {
+        width: 100%;
+        justify-content: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .link-sections {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 300px;
+        height: 200px;
+        text-align: center;
+        background: #000;
+        border-radius: 10px;
+        margin: 15px auto;
+    }
+
+    .link-sections a {
+        text-align: center;
+        padding: 10px;
+        color: #000;
+        background: #fff;
+        outline: none;
+        margin: 10px 10px;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+
+    .options2 {
+        margin-right: 30px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 35px;
+    }
+
+    #view {
+        display: none;
+    }
+
+    footer {
+        width: 100%;
+        height: 100%;
+        background: #161616;
+        padding-bottom: 50px;
+    }
+
+    .footer-nav ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .footer-nav ul li {
+        padding: 20px;
+        list-style: none;
+    }
 }
-
-/* ----------Tab responsiveness end--------- */
-
-
-/* ----------Mobile responsiveness Start--------- */
-
-
-@media screen and (max-width: 576px) {}
-
-
-
-
-/* ----------Mobile responsiveness end--------- */
